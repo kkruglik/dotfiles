@@ -8,7 +8,7 @@ Minimal, fast zsh setup for macOS development.
 - ✨ **Syntax highlighting** - Commands highlighted as you type  
 - 💡 **Auto suggestions** - History-based command suggestions
 - ⌨️ **Smart navigation** - Word jumping, prefix history search
-- 🖥️ **WezTerm config** - GPU-accelerated terminal with splitting
+- 🖥️ **WezTerm config** - GPU-accelerated terminal
 
 ## Quick Install
 
@@ -46,4 +46,3 @@ chmod +x install.sh
 ## Philosophy
 
 Minimal setup, maximum productivity. No Oh-My-Zsh bloat, just essential features using native zsh capabilities.
-
