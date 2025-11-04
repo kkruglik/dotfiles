@@ -1,0 +1,12 @@
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+macos-option-as-alt = true
+keybind = shift+enter=text:\n
+font-family = JetBrains Mono
+font-size = 18
+mouse-hide-while-typing = true
+window-decoration = true
+window-padding-x = 16
+window-padding-y = 16
+window-padding-balance = true
+window-padding-color = background
+macos-titlebar-style = transparent
