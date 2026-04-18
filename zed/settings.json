@@ -1,0 +1,291 @@
+{
+  "edit_predictions": {
+    "disabled_globs": [
+      "**/.git",
+      "**/.svn",
+      "**/.hg",
+      "**/CVS",
+      "**/.DS_Store",
+      "**/Thumbs.db",
+      "**/.classpath",
+      "**/.settings",
+      "**/.vscode",
+      "**/.idea",
+      "**/node_modules",
+      "**/.serverless",
+      "**/build",
+      "**/dist",
+      "**/coverage",
+      "**/.venv",
+      "**/__pycache__",
+      "**/.ropeproject",
+      "**/.pytest_cache",
+      "**/.ruff_cache"
+    ],
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "notification_panel": {
+    "button": true
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    }
+  },
+  "show_edit_predictions": true,
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff", "ty", "!basedpyright", "!pyright"],
+      "formatter": [
+        {
+          "code_action": "source.organizeImports.ruff"
+        },
+        {
+          "code_action": "source.fixAll.ruff"
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "python": {
+          "pythonPath": "./.venv/bin/python"
+        },
+        "basedpyright.analysis": {
+            "autoImportCompletions": false,
+          "diagnosticMode": "workspace",
+          "inlayHints.variableTypes": true,
+          "inlayHints.callArgumentNames": true,
+          "inlayHints.functionReturnTypes": true,
+          "inlayHints.genericTypes": true
+        }
+      }
+    },
+    "gopls": {
+      "gofumpt": true,
+      "initialization_options": {
+        "gofumpt": true
+      }
+    },
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "validate": false,
+          "customTags": [
+            "!And scalar",
+            "!And mapping",
+            "!And sequence",
+            "!If scalar",
+            "!If mapping",
+            "!If sequence",
+            "!Not scalar",
+            "!Not mapping",
+            "!Not sequence",
+            "!Equals scalar",
+            "!Equals mapping",
+            "!Equals sequence",
+            "!Or scalar",
+            "!Or mapping",
+            "!Or sequence",
+            "!FindInMap scalar",
+            "!FindInMap mapping",
+            "!FindInMap sequence",
+            "!Base64 scalar",
+            "!Base64 mapping",
+            "!Base64 sequence",
+            "!Cidr scalar",
+            "!Cidr mapping",
+            "!Cidr sequence",
+            "!Ref scalar",
+            "!Ref mapping",
+            "!Ref sequence",
+            "!Sub scalar",
+            "!Sub mapping",
+            "!Sub sequence",
+            "!GetAtt scalar",
+            "!GetAtt mapping",
+            "!GetAtt sequence",
+            "!GetAZs scalar",
+            "!GetAZs mapping",
+            "!GetAZs sequence",
+            "!ImportValue scalar",
+            "!ImportValue mapping",
+            "!ImportValue sequence",
+            "!Select scalar",
+            "!Select mapping",
+            "!Select sequence",
+            "!Split scalar",
+            "!Split mapping",
+            "!Split sequence",
+            "!Join scalar",
+            "!Join mapping",
+            "!Join sequence",
+            "!Condition scalar",
+            "!Condition mapping",
+            "!Condition sequence"
+          ],
+          "format": {
+            "enable": true,
+            "singleQuote": true
+          },
+          "editor": {
+            "tabSize": 4
+          },
+          "schemas": {
+            "https://raw.githubusercontent.com/lalcebo/json-schema/master/serverless/reference.json": [
+              "/*"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "tab_size": 4,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "scrollbar": {
+    "show": "never"
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": true
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "terminal": {
+    "env": {
+      "EDITOR": "zed --wait"
+    },
+    "font_size": 16,
+    "font_family": "BlexMono Nerd Font Mono",
+    "detect_venv": {
+      "on": {
+        "directories": [".venv", "venv"],
+        "activate_script": "default"
+      }
+    },
+    "button": true
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true,
+    "selections_menu": true,
+    "agent_review": true,
+    "code_actions": true
+  },
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
+  },
+  "file_types": {
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "JSON": ["json", "jsonc", "*.code-snippets"]
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/.vscode",
+    "**/.idea",
+    "**/node_modules",
+    "**/.serverless",
+    "**/build",
+    "**/dist",
+    "**/coverage",
+    "**/.venv",
+    "**/__pycache__",
+    "**/.ropeproject",
+    "**/.pytest_cache",
+    "**/.ruff_cache"
+  ],
+  "file_scan_inclusions": [".env"],
+  "project_panel": {
+    "button": true,
+    "default_width": 300,
+    "dock": "left",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "scrollbar": {
+      "show": "auto"
+    }
+  },
+  "outline_panel": {
+    "dock": "right",
+    "button": true
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false
+  },
+  "chat_panel": {
+    "dock": "right"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "autosave": "on_focus_change",
+  "theme": {
+    "mode": "system",
+    "light": "GitHub Light",
+    "dark": "Catppuccin Mocha"
+  },
+  "search": {
+    "whole_word": false,
+    "case_sensitive": true,
+    "include_ignored": false,
+    "regex": false
+  },
+  "preferred_line_length": 120,
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "formatter": {
+    "language_server": {
+      "name": "biome"
+    }
+  },
+  "code_actions_on_format": {
+    "source.fixAll.biome": true,
+    "source.organizeImports.biome": true
+  }
+}
