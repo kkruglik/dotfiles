@@ -1,12 +1,30 @@
 theme = dark:Catppuccin Frappe,light:Catppuccin Latte
 macos-option-as-alt = true
 keybind = shift+enter=text:\n
-font-family = JetBrains Mono
+font-family = JetBrainsMono Nerd Font
 font-size = 18
+font-variation = wght=400
 mouse-hide-while-typing = true
+cursor-style = bar
+cursor-style-blink = true
 window-decoration = true
+maximize = true
 window-padding-x = 16
 window-padding-y = 16
 window-padding-balance = true
 window-padding-color = background
 macos-titlebar-style = transparent
+link-url = true
+focus-follows-mouse = false
+scrollback-limit = 10000
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+notify-on-command-finish = unfocused
+notify-on-command-finish-after = 10s
+notify-on-command-finish-action = notify
+window-inherit-working-directory = false
+keybind = cmd+shift+enter=toggle_split_zoom
+keybind = ctrl+opt+left=resize_split:left,10
+keybind = ctrl+opt+right=resize_split:right,10
+keybind = ctrl+opt+up=resize_split:up,10
+keybind = ctrl+opt+down=resize_split:down,10
