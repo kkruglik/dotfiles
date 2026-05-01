@@ -19,6 +19,20 @@ chmod +x install.sh
 ./install.sh
 ```
 
+## Restore Homebrew Packages
+
+On a new Mac, restore all formulae, casks, and tools:
+
+```bash
+brew bundle install --file=Brewfile
+```
+
+To update the Brewfile after installing new packages:
+
+```bash
+brew bundle dump --file=Brewfile --force
+```
+
 ## Manual Install
 
 1. Install dependencies:
